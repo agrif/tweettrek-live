@@ -13,7 +13,7 @@ live.onmessage = function(message) {
 	});
 	container.prependTo($('#live'));
 	
-	while ($('#hide').length > 30) {
+	while ($('#hide').children().length > 30) {
 		$('#hide:last-child').remove();
 	}
 };
