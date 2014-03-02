@@ -63,11 +63,13 @@ class Relay(tweepy.StreamListener):
         data['text'] = status.text
         data['screen_name'] = status.author.screen_name
         data['name'] = status.author.name
-        data['author_url'] = status.author.url
+        data['author_url'] = 'http://twitter.com/' + status.author.screen_name
+        data['author_image'] = status.author.profile_image_url
+        data['url'] = data['author_url'] + '/status/' + status.id_str
         data['id'] = status.id_str
         data['created_at'] = status.created_at.isoformat()
         
-        print data
+        #print data
         
         for client in self.clients:
             gevent.spawn(self.send, client, data)

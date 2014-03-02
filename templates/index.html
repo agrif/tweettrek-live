@@ -5,6 +5,7 @@
     <link href="static/css/local.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<script src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js"></script>
 	<script type="text/javascript" src="static/js/reconnecting-websocket.js"></script>
@@ -13,10 +14,12 @@
   <body>
 	<div class="container">
 	  <div class="page-header">
-		<h1>@tweetTrek</h1>
+		<img src="https://pbs.twimg.com/profile_images/437352827795431424/cswSjY5S_bigger.png" style="float: left; margin-right: 1em; border-radius: 10px;">
+		<h1><a href="https://twitter.com/tweetTrek">@tweetTrek</a></h1>
+		<p>fancy dancy live updater</p>
 	  </div>
-	  <p>Eventually put a tweet widget here.</p>
 	  <div id="live">
+		<p id="teaser">tweets will show up here, as they happen!</p>
 	  </div>
 	</div>
   </body>

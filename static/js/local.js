@@ -3,7 +3,19 @@ var live = new ReconnectingWebSocket("ws://" + location.host + "/live");
 live.onmessage = function(message) {
 	var data = JSON.parse(message.data);
 	console.log(data);
-	$('#live').prepend("<div><strong>@" + data.screen_name + ":</strong> " + data.text + "</div>");
+	
+	$('#teaser').hide();
+	
+	container = $("<div></div>");
+	twttr.widgets.createTweet(data.id, container.get()[0], null, {
+		conversation: 'none',
+		cards: 'none'
+	});
+	container.prependTo($('#live'));
+	
+	while ($('#hide').length > 30) {
+		$('#hide:last-child').remove();
+	}
 };
 
 live.onclose = function() {
