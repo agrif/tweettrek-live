@@ -10,7 +10,7 @@ modified to do other sorts of live feeds.
  [tweepy]: https://github.com/tweepy/tweepy
  [flask-sockets]: http://kennethreitz.org/introducing-flask-sockets/
  [tweetTrek]: https://medium.com/p/8041e52fa832
- [Heroku]: https://dashboard.heroku.com/apps
+ [Heroku]: https://heroku.com/
  [gunicorn]: http://gunicorn.org/
 
 Customization
