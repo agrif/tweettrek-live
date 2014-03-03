@@ -34,7 +34,7 @@ To run a local test server:
 
  * Install all the packages found in *requirements.txt*:
    
-         pip install -r requirements.txt
+        pip install -r requirements.txt
  
  * Set up the following environment variables:
    * `TWITTER_API_KEY`
@@ -44,7 +44,7 @@ To run a local test server:
  
  * Start the app with [gunicorn][]:
  
-         gunicorn -k flask_sockets.worker livetweets:app
+        gunicorn -k flask_sockets.worker livetweets:app
 
 Deploy to Heroku
 ----------------
