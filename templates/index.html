@@ -1,10 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title>@tweetTrek</title>
+	
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="static/css/local.css" rel="stylesheet" media="screen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
 	<script src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js"></script>
@@ -14,7 +24,7 @@
   <body>
 	<div class="container">
 	  <div class="page-header">
-		<img src="https://pbs.twimg.com/profile_images/437352827795431424/cswSjY5S_bigger.png" style="float: left; margin-right: 1em; border-radius: 10px;">
+		<img src="https://pbs.twimg.com/profile_images/437352827795431424/cswSjY5S_bigger.png" id="header-icon">
 		<h1><a href="https://twitter.com/tweetTrek">@tweetTrek</a></h1>
 		<div style="display: inline-block">
 		  <a href="https://twitter.com/intent/tweet?screen_name=tweetTrek" class="twitter-mention-button" data-lang="en" data-size="large">Tweet to @tweetTrek</a>
@@ -22,6 +32,16 @@
 	  </div>
 	  <div id="live">
 		<p id="teaser">tweets will show up here, as they happen! if they don't, your browser might not support <a href="http://caniuse.com/websockets">websockets</a>.</p>
+	  </div>
+	</div>
+	
+	<div id="footer">
+	  <div class="container">
+		<p class="text-muted">
+		  <a href="https://twitter.com/tweetTrek">twitter</a> |
+		  <a href="https://t.co/F8mw7d2Hvj">manifesto</a> |
+		  <a href="https://github.com/agrif/tweettrek-live">source</a>
+		</p>
 	  </div>
 	</div>
   </body>
