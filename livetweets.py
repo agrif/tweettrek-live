@@ -1,6 +1,8 @@
+import gevent
+gevent.monkey.patch_all()
+
 import os
 import sys
-import gevent
 import json
 import logging
 
