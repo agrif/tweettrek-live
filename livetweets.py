@@ -61,6 +61,10 @@ class Relay(tweepy.StreamListener):
         gevent.sleep(60)
 
     def on_status(self, status):
+        retweeted = 'retweeted_status' in dir(status)
+        if retweeted:
+            return
+
         data = {}
         data['text'] = status.text
         data['screen_name'] = status.author.screen_name
