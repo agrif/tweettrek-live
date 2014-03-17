@@ -14,12 +14,26 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+	<script id="tweet-template" type="text/x-handlebars-template">
+	  {% raw %}
+	  <div class="tweet">
+		<img class="tweet-avatar" src="{{{author_image}}}">
+		<div class="tweet-author"><a href="{{{author_url}}}">@{{screen_name}}</a> {{name}}</div>
+		<div class="tweet-text">{{{nice_text}}}</div>
+		<div class="tweet-date"><a href="{{{ur}}}">{{nice_date}}</a></div>
+	  </div>
+	  {% endraw %}
+	</script>
 	
 	<script src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js"></script>
 	<script type="text/javascript" src="static/js/reconnecting-websocket.js"></script>
-    <script type="text/javascript" src="static/js/local.js"></script>
+	<script type="text/javascript" src="static/js/date.format.js"></script>
+	<script type="text/javascript" src="static/js/Autolinker.min.js"></script>
+	<script type="text/javascript" src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="static/js/local.js"></script>	
   </head>
   <body>
 	<div class="container">

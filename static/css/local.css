@@ -44,3 +44,33 @@ body
 	text-align: center;
 	margin: 20px 0;
 }
+
+.tweet
+{
+	padding: 5px;
+	margin: 5px;
+	border-bottom: 1px solid lightgray;
+}
+
+.tweet-author
+{
+	font-weight: bold;
+}
+
+.tweet-date
+{
+	text-align: right;
+	font-size: small;
+}
+
+.tweet-date a
+{
+	color: gray;
+}
+
+.tweet-avatar
+{
+	float: left;
+	margin-right: 1em;
+	border-radius: 10px;
+}
