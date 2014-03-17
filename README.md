@@ -12,6 +12,16 @@ modified to do other sorts of live feeds.
  [tweetTrek]: https://medium.com/p/8041e52fa832
  [Heroku]: https://heroku.com/
  [gunicorn]: http://gunicorn.org/
+ 
+The Javascript half of this application includes
+[Autolinker][autolinker], [Date Format][date-format], and
+[ReconnectingWebSocket][reconnecting-websocket], excellent projects
+all. All three are distributed under the MIT license, same as this
+poject, which can be found in the file *COPYING*.
+
+ [autolinker]: https://github.com/gregjacobs/Autolinker.js
+ [date-format]: http://blog.stevenlevithan.com/archives/date-time-format
+ [reconnecting-websocket]: https://github.com/joewalnes/reconnecting-websocket
 
 Customization
 -------------
