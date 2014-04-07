@@ -37,12 +37,20 @@
   }
 }
 
-@media (max-width: 500px)
+@media (max-height: 594px)
 {
 	body
 	{
 		background-size: contain;
 	}
+}
+
+@media (max-width: 768px)
+{
+	  body
+	  {
+		  background-image: none !important;
+	  }
 }
 
 html
