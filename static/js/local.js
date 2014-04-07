@@ -5,7 +5,7 @@ live.onmessage = function(message) {
 	var data = JSON.parse(message.data);
 	console.log(data);
 	
-	$('#teaser').hide();
+	$('#teaser').slideUp().animate({opacity: 0}, {queue: false});
 	
 	// format the date all nice
 	var date = new Date(data.created_at);
@@ -17,7 +17,7 @@ live.onmessage = function(message) {
 	// add it
 	var content = $(template(data));
 	content.prependTo($('#live'));
-	content.hide().fadeIn();
+	content.hide().css('opacity', 0).slideDown().animate({opacity: 1}, {queue: false});
 	
 	while ($('#live').children().length > 200) {
 		$('#live').children().last().remove();

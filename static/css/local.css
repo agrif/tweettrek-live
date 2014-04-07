@@ -34,6 +34,11 @@ body
 	border-radius: 10px;
 }
 
+#teaser
+{
+	padding: 1em;
+}
+
 #footer
 {
   position: absolute;
