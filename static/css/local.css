@@ -22,6 +22,15 @@ html
 body
 {
   margin-bottom: 60px;
+  background-image: url('/static/img/livin-the-life.jpg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-attachment: fixed;
+}
+
+#live
+{
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 #footer
