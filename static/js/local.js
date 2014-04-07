@@ -19,6 +19,9 @@ live.onmessage = function(message) {
 	content.prependTo($('#live'));
 	content.hide().css('opacity', 0).slideDown().animate({opacity: 1}, {queue: false});
 	
+	// update twitter intent links
+	twttr.widgets.load();
+	
 	while ($('#live').children().length > 200) {
 		$('#live').children().last().remove();
 	}

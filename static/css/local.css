@@ -65,6 +65,22 @@ body
 	padding: 5px;
 	margin: 5px;
 	border-bottom: 1px solid lightgray;
+	overflow: auto;
+}
+
+.tweet-avatar
+{
+	float: left;
+	margin-right: 12px;
+	border-radius: 10px;
+	width: 48px;
+	height: 48px;
+}
+
+.tweet-body
+{
+	margin-left: 60px;
+	margin-top: -0.35em;
 }
 
 .tweet-author
@@ -72,10 +88,25 @@ body
 	font-weight: bold;
 }
 
+.tweet-text
+{
+	margin-bottom: 0.5em;
+}
+
+.tweet-actions
+{
+	text-align: left;
+	font-size: small;
+	color: gray;
+	float: left;
+}
+
 .tweet-date
 {
 	text-align: right;
 	font-size: small;
+	color: gray;
+	float: right;
 }
 
 .tweet-date a
@@ -83,9 +114,7 @@ body
 	color: gray;
 }
 
-.tweet-avatar
+.tweet-actions a
 {
-	float: left;
-	margin-right: 1em;
-	border-radius: 10px;
+	color: gray;
 }

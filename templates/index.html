@@ -19,9 +19,16 @@
 	  {% raw %}
 	  <div class="tweet">
 		<img class="tweet-avatar" src="{{{author_image}}}">
-		<div class="tweet-author"><a href="{{{author_url}}}">@{{screen_name}}</a> {{name}}</div>
-		<div class="tweet-text">{{{nice_text}}}</div>
-		<div class="tweet-date"><a href="{{{url}}}">{{nice_date}}</a></div>
+		<div class="tweet-body">
+		  <div class="tweet-author"><a href="{{{author_url}}}">@{{screen_name}}</a> {{name}}</div>
+		  <div class="tweet-text">{{{nice_text}}}</div>
+		  <div class="tweet-actions">
+			<a href="https://twitter.com/intent/tweet?in_reply_to={{{id}}}"><img src="static/img/reply.png" alt="_"> Reply</a>
+			<a href="https://twitter.com/intent/retweet?tweet_id={{{id}}}"><img src="static/img/retweet.png" alt="_"> Retweet</a>
+			<a href="https://twitter.com/intent/favorite?tweet_id={{{id}}}"><img src="static/img/favorite.png" alt="_"> Favorite</a>
+		  </div>
+		  <div class="tweet-date"><a href="{{{url}}}">{{nice_date}}</a></div>
+		</div>
 	  </div>
 	  {% endraw %}
 	</script>
@@ -38,7 +45,7 @@
   <body>
 	<div class="container">
 	  <div class="page-header">
-		<img src="https://pbs.twimg.com/profile_images/437352827795431424/cswSjY5S_bigger.png" id="header-icon">
+		<img src="static/img/avatar.png" id="header-icon">
 		<h1><a href="https://twitter.com/tweetTrek">@tweetTrek</a></h1>
 		<div style="display: inline-block">
 		  <a href="https://twitter.com/intent/tweet?screen_name=tweetTrek" class="twitter-mention-button" data-lang="en" data-size="large">Tweet to @tweetTrek</a>
