@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--
+        Live long and prosper. 1931 - 2015.
+        http://en.wikipedia.org/wiki/Leonard_Nimoy
+      -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +51,7 @@
 	<script type="text/javascript" src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
     <script type="text/javascript" src="static/js/local.js"></script>	
   </head>
-  <body>
+  <body class="bg-{{ random(range(3)) }}">
 	<div class="container">
 	  <div class="page-header">
 		<!-- <a href="https://twitter.com/tweetTrek"><img src="static/img/avatar.png" id="header-icon"></a> -->
@@ -61,14 +65,11 @@
 	
 	<div id="footer">
 	  <div class="container">
-        <p class="text-muted">
-          Live long and prosper. <a href="http://en.wikipedia.org/wiki/Leonard_Nimoy">1931 - 2015</a>.
-        </p>
-		<!-- <p class="text-muted">
+		<p class="text-muted">
 		  <a href="https://twitter.com/tweetTrek">twitter</a> |
 		  <a href="https://t.co/F8mw7d2Hvj">manifesto</a> |
 		  <a href="https://github.com/agrif/tweettrek-live">source</a>
-		</p> -->
+		</p>
 	  </div>
 	</div>
   </body>

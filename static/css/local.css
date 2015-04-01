@@ -62,10 +62,24 @@ html
 body
 {
   margin-bottom: 60px;
-  background-image: url('/static/img/live-long-and-prosper.jpg');
   background-repeat: no-repeat;
   background-position: left bottom;
   background-attachment: fixed;
+}
+
+body.bg-0
+{
+    background-image: url('/static/img/livin-the-life.jpg');
+}
+
+body.bg-1
+{
+    background-image: url('/static/img/live-long-and-prosper.jpg');
+}
+
+body.bg-2
+{
+    background-image: url('/static/img/data-is-beautiful.jpg');
 }
 
 #live
