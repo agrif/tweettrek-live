@@ -6,6 +6,7 @@ import os
 import sys
 import json
 import logging
+import random
 
 from flask import Flask, render_template
 from flask_sockets import Sockets
@@ -92,7 +93,7 @@ relay.start()
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', bgnum=random.randint(0, 2))
 
 @sockets.route('/live')
 def live(ws):
