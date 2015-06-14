@@ -88,7 +88,7 @@ class Relay(tweepy.StreamListener):
     def on_limit(self, track):
         logging.warning('tweepy limit: ' + str(track))
 
-relay = Relay(track=['tweetTrek'])
+relay = Relay(track=['@tweetTrek'])
 relay.start()
 
 @app.route('/')
